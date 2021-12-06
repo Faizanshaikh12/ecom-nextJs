@@ -1,5 +1,5 @@
 module.exports = {
-    // mode: 'jit',
+    mode: 'jit',
     purge: ["./src/**/*.{js,ts,jsx,tsx}"],
     darkMode: false, // or 'media' or 'class'
     theme: {
@@ -8,5 +8,5 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require('tailwind-scrollbar-hide')],
 }
